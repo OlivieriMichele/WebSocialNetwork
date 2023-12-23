@@ -41,8 +41,13 @@ header > ul > li > img {
 }
 
 ul > li > a > img {
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 100px;
+    max-width: 100%;
+}
+
+header ul > li > a > img {
+    max-height: 70px;
+    max-width: 100%;
 }
 
 ul > li > a > img:hover{
@@ -115,7 +120,7 @@ article header h2{
 article>p{
     margin: 10px 5%;
     color: var(--text);
-    font-size: small;
+    font-size: x-small;
 }
 
 article>footer{
@@ -131,6 +136,7 @@ footer>a{
     color: #fff;
     background: var(--button_viewMore);
     border-radius: 5px;
+    font-size: x-large;
 }
 
 /* change theme button */
@@ -142,18 +148,18 @@ footer>a{
     justify-content: space-between;
     position: relative;
     border-radius: 25px;
-    height: 25px;
-    width: 50px;
+    height: 50px;
+    width: 100px;
 }
 
 .ball{
     background-color: var(--button_viewMore);
     position: absolute;
     border-radius: 50%;
-    height: 18px;
-    width: 18px;
-    top: 14%;
-    left: 4px;
+    height: 32px;
+    width: 32px;
+    top: 18%;
+    left: 10px;
     transition: 1s;
 }
 
@@ -163,15 +169,59 @@ footer>a{
 }
 
 .checkbox:checked + .label .ball{
-    transform: translateX(24px);
+    transform: translateX(48px);
 }
 
 @media screen and (max-width: 740px) {
+    
     article header h2{
         font-size: x-large;
     }
 
     article>p{
+        font-size: medium;
+    }
+
+    /* style icon */
+
+    header > ul > li > img {
+        height: 100%;
+        max-width: 100%;
+    }
+
+    ul > li > a > img {
+        max-height: 40px;
+        max-width: 100%;
+    }
+
+    header ul > li > a > img {
+        max-height: 40px;
+        max-width: 100%;
+    }
+
+    /* dark mode button */
+
+    .label{
+        border-radius: 25px;
+        height: 25px;
+        width: 50px;
+    }
+    
+    .ball{
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        top: 13%;
+        left: 4px;
+    }
+    
+    .checkbox:checked + .label .ball{
+        transform: translateX(24px);
+    }
+
+    /*__________*/
+
+    footer>a{
         font-size: medium;
     }
 }
