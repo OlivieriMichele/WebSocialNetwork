@@ -15,6 +15,7 @@
     --text: #000;
     --title_color: #C2397B;
     --button_viewMore: #732181;
+    --border: #a992ac;
 }
 
 body.dark{
@@ -24,6 +25,7 @@ body.dark{
     --text: #fff;
     --title_color: #C2397B;
     --button_viewMore: #732181;
+    --border: #a992ac;
     transition: 0.8s;
 }
 
@@ -33,7 +35,7 @@ body{
     padding-bottom: 10rem;
 }
 
-/* style icon */
+/* _________________________style icon_________________________ */
 
 header > ul > li > img {
     max-height: 150px;
@@ -55,7 +57,7 @@ ul > li > a > img:hover{
     border-radius: 10px;
 }
 
-/* style header, footer */
+/* ____________________style header, footer____________________ */
 
 header, footer, nav{
     width: 100%;
@@ -88,7 +90,7 @@ footer nav ul {
     text-align: center;
 }
 
-/* style main*/
+/* ____________________style main____________________*/
 
 main{
     display: grid;
@@ -139,7 +141,7 @@ footer>a{
     font-size: x-large;
 }
 
-/* change theme button */
+/* ____________________change theme button____________________ */
 
 .label{
     background: var(--elem_backgnd);
@@ -150,6 +152,7 @@ footer>a{
     border-radius: 25px;
     height: 50px;
     width: 100px;
+    border: solid var(--border);
 }
 
 .ball{
@@ -158,8 +161,8 @@ footer>a{
     border-radius: 50%;
     height: 32px;
     width: 32px;
-    top: 18%;
-    left: 10px;
+    top: 16%;
+    left: 8px;
     transition: 1s;
 }
 
@@ -169,28 +172,35 @@ footer>a{
 }
 
 .checkbox:checked + .label .ball{
-    transform: translateX(48px);
+    transform: translateX(46px);
 }
 
-@media screen and (max-width: 740px) {
+/*____________________________________________________________*/
+
+/* size for small devices like phone */
+@media screen and (max-width: 768px){
     
     article header h2{
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     article>p{
         font-size: medium;
     }
 
-    /* style icon */
+    footer>a{
+    	font-size: medium;
+    }
+
+    /* __________style icon__________ */
 
     header > ul > li > img {
-        height: 100%;
+        height: 150px;
         max-width: 100%;
     }
 
     ul > li > a > img {
-        max-height: 40px;
+        max-height: 50px;
         max-width: 100%;
     }
 
@@ -199,29 +209,81 @@ footer>a{
         max-width: 100%;
     }
 
-    /* dark mode button */
+    /* __________dark mode button__________ */
 
     .label{
-        border-radius: 25px;
-        height: 25px;
-        width: 50px;
+        border-radius: 25px *0.4;
+        height: 50px *0.4;
+        width: 100px *0.4;
     }
     
     .ball{
-        border-radius: 50%;
-        height: 18px;
-        width: 18px;
-        top: 13%;
-        left: 4px;
+        border-radius: 50% *0.4;
+        height: 32px *0.4;
+        width: 32px *0.4;
+        top: 16% *0.4;
+        left: 8px *0.4;
     }
     
     .checkbox:checked + .label .ball{
-        transform: translateX(24px);
+        transform: translateX(46px *0.4);
+    }
+}
+
+/* size for medium devices like tablet */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* size for larger devices like laptop */
+@media screen and (min-width: 1024px) {
+    
+    article header h2{
+        font-size: xx-large;
     }
 
-    /*__________*/
+    article>p{
+        font-size: medium;
+    }
 
     footer>a{
-        font-size: medium;
+    	font-size: medium;
+    }
+
+    /* __________style icon__________ */
+
+    header > ul > li > img {
+        height: 150px;
+        max-width: 100%;
+    }
+
+    ul > li > a > img {
+        max-height: 50px;
+        max-width: 100%;
+    }
+
+    header ul > li > a > img {
+        max-height: 40px;
+        max-width: 100%;
+    }
+
+    /* __________dark mode button__________ */
+
+    .label{
+        border-radius: 25px *0.4;
+        height: 50px *0.4;
+        width: 100px *0.4;
+    }
+    
+    .ball{
+        border-radius: 50% *0.4;
+        height: 32px *0.4;
+        width: 32px *0.4;
+        top: 16% *0.4;
+        left: 8px *0.4;
+    }
+    
+    .checkbox:checked + .label .ball{
+        transform: translateX(46px *0.4);
     }
 }
