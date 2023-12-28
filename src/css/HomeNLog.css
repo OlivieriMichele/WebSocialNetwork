@@ -26,8 +26,12 @@ body{
 /*____________________style immagin____________________*/
 
 header > ul > li > img {
-    max-height: 150px;
+    max-height: 100px;
     max-width: 100%;
+}
+
+header ul {
+    list-style: none;
 }
 
 aside img {
@@ -37,3 +41,51 @@ aside img {
 
 /*____________________style header footer____________________*/
 
+header ul {
+    width: 100%;
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+li:nth-child(2){
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    padding: 2% 40% 2% 5%;
+    border-radius: 8px;
+    background: #EBEDE9;
+    box-shadow: 3px 3px 0px 0.5px rgba(0, 0, 0, 0.25);
+    border: solid 1px #ADB5BD;
+    font-size: large;
+}
+
+body > footer{
+    padding: 5% 5%;
+    text-align: center;
+    background: var(--text);
+    color: white;
+}
+
+/*____________________style main____________________*/
+
+main h1{
+    margin: 3% 1%;
+    font-family: 'Newsreader', sans-serif;
+    text-align: center;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 300%;
+}
+
+article{
+    margin-top: 3%;
+    padding: 2% 2%;
+    display: flex;
+    background: linear-gradient(to bottom right,var(--backgndAside),var(--backgndAside2),var(--backgndAside3));
+    color: white;
+}
