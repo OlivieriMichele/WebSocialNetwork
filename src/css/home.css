@@ -42,13 +42,13 @@ header > ul > li > img {
     max-width: 100%;
 }
 
-ul > li > a > img {
-    max-height: 100px;
+header ul > li > a > img {
+    max-height: 70px;
     max-width: 100%;
 }
 
-header ul > li > a > img {
-    max-height: 70px;
+ul > li > a > img {
+    max-height: 100px;
     max-width: 100%;
 }
 
@@ -177,9 +177,13 @@ footer>a{
 
 /*____________________________________________________________*/
 
-/* size for small devices like phone */
-@media screen and (max-width: 768px){
-    
+/* __________size for small devices like__________*/
+@media screen and (min-width: 300px) {
+
+    body {background: #292729;}
+
+    head title {visibility: hidden;}
+
     article header h2{
         font-size: xx-large;
     }
@@ -230,13 +234,65 @@ footer>a{
     }
 }
 
-/* size for medium devices like tablet */
-@media screen and (min-width: 768px) {
+/* size for middle devices like tablet */
+@media screen and (min-width: 600px){
+
+    head title {visibility: var(--button_viewMore);}
+
+    body {background: var(--backgnd);}
     
+    article header h2{
+        font-size: xx-large;
+    }
+
+    article>p{
+        font-size: medium;
+    }
+
+    footer>a{
+    	font-size: medium;
+    }
+
+    /* __________style icon__________ */
+
+    header > ul > li > img {
+        height: 150px;
+        max-width: 100%;
+    }
+
+    ul > li > a > img {
+        max-height: 50px;
+        max-width: 100%;
+    }
+
+    header ul > li > a > img {
+        max-height: 40px;
+        max-width: 100%;
+    }
+
+    /* __________dark mode button__________ */
+
+    .label{
+        border-radius: 25px *0.4;
+        height: 50px *0.4;
+        width: 100px *0.4;
+    }
+    
+    .ball{
+        border-radius: 50% *0.4;
+        height: 32px *0.4;
+        width: 32px *0.4;
+        top: 16% *0.4;
+        left: 8px *0.4;
+    }
+    
+    .checkbox:checked + .label .ball{
+        transform: translateX(46px *0.4);
+    }
 }
 
 /* size for larger devices like laptop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
     
     article header h2{
         font-size: xx-large;
@@ -286,4 +342,5 @@ footer>a{
     .checkbox:checked + .label .ball{
         transform: translateX(46px *0.4);
     }
+
 }

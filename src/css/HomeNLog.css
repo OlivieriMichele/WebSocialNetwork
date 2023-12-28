@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500&family=Newsreader:opsz,wght@6..72,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* color */
+    --backgnd: #E6E6E6;
+    --backgndAside: #3C6E71;
+    --backgndAside2: #ADB5BD;
+    --backgndAside3: #3C6E71;
+    --elem: #284B63;
+    --text: #433D3D;
+    --textContrast: #284B63;
+}
+
+body{
+    background: var(--backgnd);
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: inline-block;
+}
+
+/*____________________style immagin____________________*/
+
+header > ul > li > img {
+    max-height: 150px;
+    max-width: 100%;
+}
+
+aside img {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+/*____________________style header footer____________________*/
+
