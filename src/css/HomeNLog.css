@@ -15,6 +15,7 @@
     --elem: #284B63;
     --text: #433D3D;
     --textContrast: #284B63;
+    --divider:#688C72;
 }
 
 body{
@@ -35,7 +36,7 @@ header ul {
 }
 
 aside img {
-    max-height: 300px;
+    max-height: 150px;
     max-width: 100%;
 }
 
@@ -59,9 +60,24 @@ input{
     padding: 2% 40% 2% 5%;
     border-radius: 8px;
     background: #EBEDE9;
+    color: var(--textContrast);
     box-shadow: 3px 3px 0px 0.5px rgba(0, 0, 0, 0.25);
     border: solid 1px #ADB5BD;
     font-size: large;
+}
+
+#Sign_up{
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    background: var(--elem);
+    border-radius: 8px;
+    color: white;
+    padding: 8% 0;
+    font-size: medium;
+    font-weight: 300;
+    line-height: 160%; /* 28.8px */
 }
 
 body > footer{
@@ -79,13 +95,69 @@ main h1{
     text-align: center;
     color: var(--text);
     font-weight: 600;
-    font-size: 300%;
+    font-size: 350%;
+    margin-bottom: 5%;
+}
+
+.divider{
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 2px;
+    background: var(--divider);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 article{
-    margin-top: 3%;
-    padding: 2% 2%;
+    margin-bottom: 2%;
+    padding: 3% 0%;
     display: flex;
-    background: linear-gradient(to bottom right,var(--backgndAside),var(--backgndAside2),var(--backgndAside3));
+    background: linear-gradient(281deg, var(--backgndAside) 0%, rgba(60, 110, 113, 0.00) 50%), linear-gradient(98deg, var(--elem) 0%, var(--backgndAside2) 72.39%);
     color: white;
 }
+
+article section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+section h2{
+    text-align: center;
+    font-feature-settings: 'case' on, 'clig' off, 'liga' off;
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 160%; /* 41.6px */
+    letter-spacing: -0.26px;
+    text-transform: capitalize;
+}
+
+section p{
+    padding: 4% 20%;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: -0.18px;
+    text-transform: capitalize;
+}
+
+section a{
+    margin: 0 auto;
+    margin-top: 4%;
+    text-decoration: none;
+    background: var(--elem);
+    border-radius: 8px;
+    color: white;
+    padding: 2% 5%;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+}
+
+/*____________________style aside____________________*/
+

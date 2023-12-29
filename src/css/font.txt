@@ -1,0 +1,11 @@
+font familiy: Montserrat Alternates, Newsreader
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500&family=Newsreader:opsz,wght@6..72,200&display=swap');
+
+font familiy: Poppins
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+Color app:
+#9a85FC     /* viola */
+#86B7B8     /* verde */
+#353D48     /* dark_grey */
