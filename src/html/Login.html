@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../img/logo.PNG" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/login.css">
+        <title>Login - Sign Up</title>
+    </head>
+    <body>
+        
+        <input type="checkbox" id="chk" aria-hidden="true">
 
-    <link rel="stylesheet" href="../css/login.css">
-    <title>Login</title>
-</head>
-<body>
-
-    <section class="container">
-        <div class="header">
-            <h1>ArtHub</h1>
-        </div>
-
-        <div class="form-container">
-            <form action="login.php" method="post">
-                <input type="text" placeholder="Username" name="username" required>
-                <input type="password" placeholder="Password" name="password" required>
-                <button type="submit">Log In</button>
+        <main>  	
+            <img src="../img/logo.PNG" alt="">
+            
+            
+            <form class="signup">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Sign up</button>
             </form>
-        </div>
-
-        <footer>
-            <p>Don't have an account? <a class="signup-link" href="#">Sign up</a></p>
-        </footer>
-    </section>
-
-</body>
-</html>
+            
+            <form class="login">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+                
+            </main>
+            <footer>
+                <a href="#">Home</a>
+                <!-- Aggiungi altri link secondo necessità -->
+                <p>Copyright © 2023 All Rights Reserved by ArtHub.</p>
+            </footer>
+        </body>
+    </html>
