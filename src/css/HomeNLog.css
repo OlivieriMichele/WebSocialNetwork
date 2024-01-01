@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -114,17 +115,17 @@ article{
 
 #Sculpture{ background: linear-gradient(281deg, var(--backgndAside) 0%, rgba(60, 110, 113, 0.00) 50%), linear-gradient(98deg, var(--elem) 0%, var(--backgndAside2) 72.39%);}
 
-#Sculpture a { background: var(--elem);}
-
 #Painting{ background: linear-gradient(277deg, #996A3B 0%, rgba(255, 255, 255, 0.00) 35.56%), linear-gradient(104deg, #986D43 0.5%, #AA9A90 63.51%);}
-
-#Painting a {background: #E97543; box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
 
 #Fashon{ background: linear-gradient(281deg, #9D4EDD 0%, rgba(104, 140, 114, 0.00) 50%), linear-gradient(103deg, #7B2CBF 0.26%, #9F52DD 35.35%, #B064EB 47.09%, #C77DFF 57.38%);}
 
-#Fashon a { background: #B1316E; box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.50), 0px 3px 3px 0px rgba(0, 0, 0, 0.15) inset;}
-
 #Photography{ background: linear-gradient(281deg, #425C49 0%, rgba(104, 140, 114, 0.00) 50%), linear-gradient(101deg, #425C49 0.23%, #7A9D64 50%);}
+
+#Sculpture a { background: var(--elem);}
+
+#Painting a {background: #E97543; box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+
+#Fashon a { background: #B1316E; box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.50), 0px 3px 3px 0px rgba(0, 0, 0, 0.15) inset;}
 
 #Photography a {background: #425C49; }
 
@@ -175,6 +176,13 @@ aside{
     position: relative;
     height: 458px;
     width: 514px;
+}
+
+.next{
+    position: absolute;
+    left: 50%;
+    background-color: var(--elem);
+    border-radius: 50%;
 }
 
 /*____________________style aside____________________*/
