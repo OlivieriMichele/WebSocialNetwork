@@ -20,16 +20,17 @@
 }
 
 /* classi dello script
-body.painting{
 
+body.sculpture{
+}
+
+.painting{
 }
 
 body.fahson{
-
 }
 
 body.photography{
-
 }
 */
 
@@ -38,13 +39,6 @@ body{
     background: var(--backgnd);
     font-family: 'Montserrat Alternates', sans-serif;
     display: inline-block;
-}
-
-/*____________________style image logo____________________*/
-
-header > ul > li > img {
-    max-height: 100px;
-    max-width: 100%;
 }
 
 /*____________________style header footer____________________*/
@@ -64,6 +58,11 @@ header ul {
     justify-content: center;
     align-items: center;
     gap: 64px;
+}
+
+header > ul > li > img {
+    max-height: 100px;
+    max-width: 100%;
 }
 
 li:nth-child(2){
@@ -213,8 +212,7 @@ aside{
     width: 514px;
 }
 
-.next{
-    visibility: hidden;
+i{
     position: relative;
     left: 50%;
     background-color: var(--elem);
