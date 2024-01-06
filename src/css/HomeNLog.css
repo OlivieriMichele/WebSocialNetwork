@@ -91,24 +91,6 @@ input{
     line-height: 160%; /* 28.8px */
 }
 
-h1{
-    margin: 2% 1% 5% 1%;
-    font-family: 'Newsreader', sans-serif;
-    text-align: center;
-    color: var(--text);
-    font-weight: 600;
-    font-size: 350%;
-}
-
-.divider{
-    margin-bottom: 2rem;
-    margin-left: 10%;
-    width: 80%;
-    height: 2px;
-    background: var(--divider);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 body > footer{
     padding: 5% 5%;
     text-align: center;
@@ -120,7 +102,7 @@ body > footer{
 
 nav{
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 nav ul{
@@ -142,9 +124,27 @@ nav ul li a:hover{
     color: var(--textContrast);
 }
 
+h1{
+    margin: 2% 1% 4% 1%;
+    font-family: 'Newsreader', sans-serif;
+    text-align: center;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 350%;
+}
+
+.divider{
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    width: 80%;
+    height: 2px;
+    background: var(--divider);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 /*____________________style main____________________*/
 
-article{
+.active{
     margin-bottom: 2%;
     padding: 3% 0%;
     display: flex;
@@ -152,40 +152,40 @@ article{
     color: white;
 }
 
-#Sculpture{ 
+#tab1-content{ 
     margin-top: 2%; 
     background: linear-gradient(281deg, var(--backgndAside) 0%, rgba(60, 110, 113, 0.00) 50%), linear-gradient(98deg, var(--elem) 0%, var(--backgndAside2) 72.39%);
 }
 
-#Painting{ 
+#tab2-content{ 
     background: linear-gradient(277deg, #996A3B 0%, rgba(255, 255, 255, 0.00) 35.56%), linear-gradient(104deg, #986D43 0.5%, #AA9A90 63.51%);
 }
 
-#Fashon{
+#tab3-content{
     background: linear-gradient(281deg, #9D4EDD 0%, rgba(104, 140, 114, 0.00) 50%), linear-gradient(103deg, #7B2CBF 0.26%, #9F52DD 35.35%, #B064EB 47.09%, #C77DFF 57.38%);
 }
 
-#Photography{ 
+#tab4-content{ 
     background: linear-gradient(281deg, #425C49 0%, rgba(104, 140, 114, 0.00) 50%), linear-gradient(101deg, #425C49 0.23%, #7A9D64 50%);
 }
 
-#Sculpture a {
+#tab1-content a {
     background: var(--elem);
 }
 
-#Painting a {
+#tab2-content a {
     background: #E97543; box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#Fashon a { 
+#tab3-content a { 
     background: #B1316E; box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.50), 0px 3px 3px 0px rgba(0, 0, 0, 0.15) inset;
 }
 
-#Photography a {
+#tab4-content a {
     background: #425C49; 
 }
 
-article section{
+.active section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,7 +193,7 @@ article section{
     width: 50%;
 }
 
-section h2{
+.active section h2{
     text-align: center;
     font-feature-settings: 'case' on, 'clig' off, 'liga' off;
     font-size: 1.8rem;
@@ -203,7 +203,7 @@ section h2{
     text-transform: capitalize;
 }
 
-section p{
+.active section p{
     padding: 4% 20%;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -214,7 +214,7 @@ section p{
     text-transform: capitalize;
 }
 
-section a{
+.active section a{
     margin: 0 auto;
     text-decoration: none;
     background: var(--elem);
@@ -228,10 +228,14 @@ section a{
     line-height: 160%; /* 28.8px */
 }
 
-aside{
+.active aside{
     position: relative;
     height: 458px;
     width: 514px;
+}
+
+.disable{
+    display: none;
 }
 
 /*____________________style aside____________________*/
