@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 :root{
@@ -45,9 +44,7 @@ body{
 
 header{
     width: 100%;
-    position: fixed;
     background-color: var(--backgnd);
-    flex-shrink: 0;
 }
 
 header ul {
@@ -65,7 +62,7 @@ header > ul > li > img {
     max-width: 100%;
 }
 
-li:nth-child(2){
+header li:nth-child(2){
     width: 50%;
 }
 
@@ -95,7 +92,6 @@ input{
 }
 
 h1{
-    width: 100%;
     margin: 2% 1% 5% 1%;
     font-family: 'Newsreader', sans-serif;
     text-align: center;
@@ -105,7 +101,7 @@ h1{
 }
 
 .divider{
-    margin-bottom: 5%;
+    margin-bottom: 2rem;
     margin-left: 10%;
     width: 80%;
     height: 2px;
@@ -120,6 +116,32 @@ body > footer{
     color: white;
 }
 
+/*____________________style nav____________________*/
+
+nav{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: var(--textContrast);
+}
+
 /*____________________style main____________________*/
 
 article{
@@ -131,7 +153,7 @@ article{
 }
 
 #Sculpture{ 
-    margin-top: 25%; 
+    margin-top: 2%; 
     background: linear-gradient(281deg, var(--backgndAside) 0%, rgba(60, 110, 113, 0.00) 50%), linear-gradient(98deg, var(--elem) 0%, var(--backgndAside2) 72.39%);
 }
 
@@ -174,7 +196,7 @@ article section{
 section h2{
     text-align: center;
     font-feature-settings: 'case' on, 'clig' off, 'liga' off;
-    font-size: x-large;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 160%; /* 41.6px */
     letter-spacing: -0.26px;
@@ -185,7 +207,7 @@ section p{
     padding: 4% 20%;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 160%; /* 28.8px */
     letter-spacing: -0.18px;
@@ -198,10 +220,10 @@ section a{
     background: var(--elem);
     border-radius: 8px;
     color: white;
-    padding: 2% 5%;
+    padding: 2% 4%;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 160%; /* 28.8px */
 }
@@ -210,13 +232,6 @@ aside{
     position: relative;
     height: 458px;
     width: 514px;
-}
-
-i{
-    position: relative;
-    left: 50%;
-    background-color: var(--elem);
-    border-radius: 50%;
 }
 
 /*____________________style aside____________________*/
