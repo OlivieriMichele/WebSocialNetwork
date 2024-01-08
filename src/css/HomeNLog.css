@@ -7,7 +7,6 @@
 }
 
 :root{
-    /* color */
     --backgnd: #E6E6E6;
     --backgndAside: #3C6E71;
     --backgndAside2: #ADB5BD;
@@ -18,26 +17,10 @@
     --divider:#688C72;
 }
 
-/* classi dello script
-
-body.sculpture{
-}
-
-.painting{
-}
-
-body.fahson{
-}
-
-body.photography{
-}
-*/
-
 body{
     width: 100%;
     background: var(--backgnd);
     font-family: 'Montserrat Alternates', sans-serif;
-    display: inline-block;
 }
 
 /*____________________style header footer____________________*/
@@ -51,7 +34,6 @@ header ul {
     width: 100%;
     list-style: none;
     display: inline-flex;
-    vertical-align: top;
     justify-content: center;
     align-items: center;
     gap: 64px;
@@ -63,7 +45,7 @@ header > ul > li > img {
 }
 
 header li:nth-child(2){
-    width: 50%;
+    width: 40%;
 }
 
 input{
@@ -92,7 +74,7 @@ input{
 }
 
 body > footer{
-    padding: 5% 5%;
+    padding: 4% 4%;
     text-align: center;
     background: var(--text);
     color: white;
@@ -148,7 +130,7 @@ h1{
     margin-bottom: 2%;
     padding: 3% 0%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     color: white;
 }
 
@@ -190,7 +172,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 50%;
+    width: 514px;
 }
 
 .active section h2{
@@ -204,7 +186,7 @@ h1{
 }
 
 .active section p{
-    padding: 4% 20%;
+    padding: 4% 10%;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 1.1rem;
@@ -262,7 +244,7 @@ h1{
 
 .img3{
     position: absolute;
-    bottom: 10%;
+    bottom: 8%;
     right: 62%;
     width: 139px;
     height: 110px;
